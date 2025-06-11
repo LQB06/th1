@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js"></script>
+<title>Todo Application</title>
+</head>
+<body>
+    <div>
+<div class="container">
+<h1>Todo List</h1>
+<input type="text" id="taskInput" placeholder="Add a new task">
+<button id="addTaskBtn">Add Task</button>
+<ul id="taskList"></ul>
+</div>
+<div class="container">
+<footer>
+<p>Created by [Your Name] on [Today's <span id="_date"></span>]</p>
+ <script>
+const result1 = new Date().toLocaleDateString('en-GB');
+document.getElementById("_date").innerHTML = result1;
+</script>
+</footer></div>
+</div>
+</body>
+</html>
